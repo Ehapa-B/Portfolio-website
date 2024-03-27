@@ -335,8 +335,6 @@ section {
 
 .project_main .project_content .project_image_box {
     position: relative;
-    /*  filter: grayscale(1);
-    transition: filter .5s, transform .5s; */
 }
 
 .project_main .project_content .project_image_box img {
@@ -345,11 +343,6 @@ section {
     object-fit: cover;
     border-radius: 5px;
 }
-
-/* .project_main .project_content .project_image_box:hover img {
-    transform: scale(1.1);
-    filter: none;
-} */
 
 .project_image_box .project_text_box {
     text-align: center;
@@ -405,6 +398,10 @@ section {
     width: 100%;
 }
  
+#contact .bx {
+    background-color: black;
+}
+
 
 
 
