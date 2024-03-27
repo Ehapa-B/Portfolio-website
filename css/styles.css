@@ -398,131 +398,9 @@ section {
     width: 100%;
 }
  
-#contact .bx {
-    background-color: black;
+#contact p {
+    color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* EDUCATION SECTION */
-
-.education {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: auto;
-    padding-bottom: 5rem;
-}
-
-.education .education-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-}
-
-.education-row .education-column {
-    flex: 1 1 40rem;
-}
-
-.education-column .title {
-    position: relative;
-    display: inline-block;
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
-}
-
-.education-column .education-box {
-    position: relative;
-    border-left: .2rem solid var(--main-color);
-}
-
-.education-box .education-content {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.education-box .education-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1.1rem;
-    width: 2rem;
-    height: 2rem;
-    background: var(--main-color);
-    border-radius: 50%;
-}
-
-.education-content .content {
-    position: relative;
-    padding: 1.5rem;
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
-    margin-bottom: 2rem;
-    overflow: hidden;
-}
-
-.education-content .content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    background: var(--second-bg-color);
-    transition: .5s;
-}
-
-
-.education-content .content:hover::before {
-    width: 100%;
-}
-
-.education-content .content .year {
-    font-size: 1.5rem;
-    color: var(--main-color);
-    padding-bottom: .5rem;
-}
-
-.education-content .content .year i {
-    padding-right: .5rem;
-}
-
-.education-content .content h3 {
-    font-size: 2rem;
-}
-
-.education-content .content p {
-    font-size: 1.6rem;
-    padding-top: .5rem;
-}
-
-
 
 /* SKILLS SECTION */
 
@@ -682,6 +560,7 @@ section {
     height: 200px;
     border-radius: 8px;
     display: flex;
+    font-size: 15px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -689,7 +568,24 @@ section {
     max-width: 400px;
 }
 
-.contact_main a i {
+.contact_main a i  {
+    font-size: 28px;
+    background: var(--second-bg-color);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: 0.3s linear;
+    opacity: 0;
+}
+
+.contact_main p:hover  {
+    background: rgb(235, 228, 228);
+    color: var(--main-color);
+    transform: scale(1.6);
+}
+/* .contact_main a i {
     font-size: 28px;
     background: var(--second-bg-color);
     width: 60px;
@@ -719,7 +615,7 @@ section {
 .contact_main a:hover p {
     max-height: 40px;
     opacity: 1;
-}
+} */
 
 
 
